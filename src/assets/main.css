@@ -1,0 +1,13 @@
+@import './base.css';
+
+nav a {
+    @apply px-2 rounded-md text-white transition-colors duration-300
+}
+
+nav a.router-link-active {
+    @apply bg-white text-slate-700
+}
+
+.global-transition {
+    @apply transition-all duration-300
+}
