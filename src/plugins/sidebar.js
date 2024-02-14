@@ -1,8 +1,8 @@
 import { ref } from 'vue';
 
+const sidebar     = ref();
 const statusTheme = () => localStorage.sidebarIsOpen === 'true' || !('sidebarIsOpen' in localStorage);
 
-const sidebar = ref();
 
 const sidebarOpen = (active = true) => {
     sidebar.value = (active)

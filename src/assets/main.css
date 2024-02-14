@@ -8,6 +8,10 @@ nav a.router-link-active {
     @apply bg-white text-slate-700
 }
 
+.input-primary {
+    @apply w-full py-1 px-2 rounded-md dark:text-gray-800 outline-0
+}
+
 .global-transition {
     @apply transition-all duration-300
 }

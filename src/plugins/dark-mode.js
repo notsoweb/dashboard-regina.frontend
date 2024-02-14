@@ -1,7 +1,7 @@
 import { ref } from 'vue';
 
 const mainPage = document.getElementById('main-page');
-const theme = ref('');
+const theme    = ref('');
 
 const statusTheme = () => localStorage.theme === 'dark' || (!('theme' in localStorage));
 

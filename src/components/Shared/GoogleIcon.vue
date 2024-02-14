@@ -13,6 +13,7 @@ const classes = computed(() => {
         : 'font-google-icon';
 });
 </script>
+
 <template>
     <button :title="title" type="button">
         <span

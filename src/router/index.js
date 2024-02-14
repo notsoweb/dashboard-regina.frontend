@@ -1,7 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-
-console.log(import.meta.env)
+import HomeView from '../pages/HomeView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(import.meta.env.BASE_URL),
@@ -12,9 +10,14 @@ const router = createRouter({
       component: HomeView
     },
     {
+      path: '/login',
+      name: 'auth.login',
+      component: () => import('../pages/Auth/Login.vue')
+    },
+    {
       path: '/about',
       name: 'about',
-      component: () => import('../views/AboutView.vue')
+      component: () => import('../pages/AboutView.vue')
     }
   ]
 })

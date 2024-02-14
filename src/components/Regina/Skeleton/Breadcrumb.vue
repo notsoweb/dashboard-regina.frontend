@@ -1,5 +1,5 @@
 <script setup>
-import { switchSidebar } from '@Plugins/sidebar.js'
+import { switchSidebar } from '@/plugins/sidebar.js'
 
 import GoogleIcon from '@/components/Shared/GoogleIcon.vue'
 defineProps({
